@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Demo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Demo Code -->
+    <string name="str_button">LugVi Events Page</string>
+    <string name="str_buttonpressed">Pulsante Premuto! :D</string>
+    <string name="url_lugvi_events">http://vicenza.linux.it/node/177</string>
+    <!-- -->
+
+
+</resources>
