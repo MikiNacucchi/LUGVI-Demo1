@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import static android.widget.Toast.LENGTH_LONG;
@@ -19,8 +20,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         
         /*      Demo code       */
+        //Selezione il componente dell'UI
+        Button btn = (Button) findViewById(R.id.button);
+
+
         //Evento da associare alla pressione del pulsante
-        View.OnClickListener event = new View.OnClickListener() { //tipo di oggetto da usare per eventi nei componenti della UI
+        View.OnClickListener listener = new View.OnClickListener() { //tipo di oggetto da usare per eventi nei componenti della UI
             @Override
             public void onClick(View v) { //Metodo che verrà richiamato alla presione del pulsante
                 faiqualcosa1();
@@ -29,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         };
 
         //Selezione l'elento della UI e attribuisco l'evento creato
-        findViewById(R.id.button).setOnClickListener(event);
+        btn.setOnClickListener(listener);
         /*      =========       */
     }
 
